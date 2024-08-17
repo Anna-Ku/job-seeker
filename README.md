@@ -1,4 +1,4 @@
-# js_project
+# Job Seekers Project 
 
 <p align="center">
     <img src="" height="300px">
