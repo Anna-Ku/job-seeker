@@ -1,0 +1,226 @@
+.main-holder{
+  background-color: rgb(37, 39, 42);
+  color: #b2e4ec;
+  display: flex;
+}
+
+#empty_favorites{
+  height: 100vh;
+  width: 100vw;
+}
+
+#empty_favorites p{
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.carousel-inner > .carousel-item > img {
+  max-height: 90vh;
+  width: 100vw;
+}
+/**************************  link in navbar **************************/
+/* Change the color of links on hover */
+.nav-item a:hover {
+  border-radius: 25px;
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.nav-item a.active {
+  border-radius: 25px;
+  background-color: royalblue;
+  color: white;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+/**************************  scrollbar **************************/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  height: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/**************************  cards **************************/
+.cards {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+   color: #b2e4ec;
+   flex: 0 1 30%;
+   text-align: center;
+   padding: 5px 5px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   border-width: 2px;
+}
+
+.card:hover,
+.card:focus {
+    background-color:  rgba(0,166,194,.03);
+    border-color: #b2e4ec;
+    border-width: 2px;
+    color: #a8bbbf;
+}
+
+.company-logo-img {
+  background-color: #fff;
+  border: 2px solid #e3e3e3;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-self: center;
+}
+
+.company-logo-img img {
+  max-height: calc(100%);
+  max-width: calc(100%);
+}
+
+.job-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.job-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.company-name {
+  align-self: center;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding: 0 24px;
+}
+
+.skills-container {
+  height: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.skill {
+  height: fit-content;
+  align-self: center;
+  width: fit-content;
+  color: #00a6c2;
+  border-radius: 2px;
+  background-color: rgba(0,166,194,.05);
+  border: 1px solid rgba(0,166,194,.15);
+  font-size: 12px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition-duration: 0.4s;
+  z-index: 2;
+  font-weight: bolder;
+}
+
+.see {
+  background-color: #383f46;
+  color: #fff;
+}
+
+.see:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.save {
+  background-color: #fff;
+  border: 1px solid #a4a5a8;
+  color: #777;
+}
+
+.save:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+/**************************  Responsive **************************/
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .cards{
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .card {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: none;
+  }
+
+  #empty_favorites p{
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .cards{
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .card {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: none;
+  }
+
+  .carousel-inner > .carousel-item > img {
+    min-height: 300px; 
+  }
+
+  #empty_favorites p{
+    margin-top: 5%;
+    margin-left: 0;
+  }
+}
